@@ -21,6 +21,7 @@ On macOS, sensors update in the same situations as above as well as immediately 
 | `sensor.battery_state` | `Low Power Mode` | The current charging state (either `Charging`, `Not Charging`, or `Full`) of the device. |
 | `sensor.bssid` | None |  The MAC address of the wireless access point your phone is connected to. When off Wi-Fi, this sensor will report `Not Connected`. |
 | `sensor.connection_type` | iOS: `Cellular Technology`<br />macOS: `Name`, `Hardware Address` | The current data connection being used by the device. On macOS, this requires app version 2021.2 or later. |
+| `binary_sensor.focus` | None | Whether focus is currently enabled. Requires focus permission and iOS 15/macOS 12 update later this year. |
 | `sensor.geocoded_location` | [See Below](#geocoded-location-sensor) | Calculated address based on GPS data. |
 | `sensor.last_update_trigger` | None | The cause of the last update of location and sensor data from the device to Home Assistant |
 | `sensor.ssid` | None | The human-readable name of the Wi-Fi network the device is currently connected to. When off Wi-Fi, this sensor will report `Not Connected`. |
